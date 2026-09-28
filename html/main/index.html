@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraria - Prova</title>
     <time datetime="28/09/2026"></time>
 </head>
+
 <body>
     <header>
-        <h1>Terraria  - Archives</h1>
+        <h1>Terraria - Archives</h1>
         <figure>
             <img src="/img/terraria.jpg" alt="Terraria">
             <figcaption><i>Capa do Game</i></figcaption>
         </figure>
         <audio controls autoplay muted>
             <source src="/audio/trilha_main.mp3">
-            Seu návegador não suporta áudio  
+            Seu návegador não suporta áudio
         </audio>
     </header>
     <nav>
@@ -103,7 +105,7 @@
                 </ol>
             </article>
         </section>
-        <section >
+        <section>
             <hr>
             <h2>Hardmode</h2>
 
@@ -206,9 +208,57 @@
                     e enfrentando chefes novamente.
                 </p>
             </article>
+            <hr>
+            <section>
+                <h2>Formulário do Jogador</h2>
+                <form>
+                    <p>
+                        <label>Nome do jogador:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+                    <p>
+                        <label>Classe favorita:</label>
+                        <input type="text" id="classe" name="classe" list="classes" placeholder="Escolha uma classe" required>
+                        <datalist id="classes">
+                            <option value="Melee">
+                            <option value="Ranged">
+                            <option value="Magic">
+                            <option value="Summoner">
+                        </datalist>
+                    </p>
+                    <p>
+                        <label>Quando você começou a jogar Terraria?</label>
+                        <input type="date" id="data" name="data" required>
+                    </p>
+                    <p>
+                        <label>
+                            Qual seu nível de experiência com Terraria?
+                        </label>
+                        <input type="range" id="dificuldade" name="dificuldade" min="0" max="10" value="5">
+                    </p>
+                    <!-- Iria colocar para que fosse enviado a imagem do jogador, mas não me recordo o input--> 
+                    <p>
+                        <label>Boss favorito:</label>
+                        <input type="text" id="boss" name="boss" placeholder="Ex: Moon Lord" required>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </p>
+                </form>
+            </section>
+            <hr>
             <aside>
+                <h2>Dúvidas</h2>
                 <details>
-                    <summary></summary>
+                    <summary>O que significa Hardmode?</summary>
+                    <p>O <abbr title="Hardmode">HM</abbr> é uma nova etapa do Terraria. Iniciada após derrotar a <b>Wall
+                            of Flesh</b></p>
+                </details>
+                <details>
+                    <summary>Qual é o boss final?</summary>
+                    <p>O Moon Lorde é atualmente o boss final do game. Pode verificar mais sobre ele na página de <a
+                            href="../boss.html">Bosses</a></p>
                 </details>
             </aside>
         </section>
@@ -216,7 +266,9 @@
     <hr>
     <footer>
         <p><small>&copy;Página feita por Ian para prova</small></p>
+        <p>As Informações desta página foram obtidas no <cite>Terraria Wiki</cite></p>
         <a href="#top"><small>Voltar para topo</small></a>
     </footer>
 </body>
+
 </html>
